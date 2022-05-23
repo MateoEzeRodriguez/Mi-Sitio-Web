@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>TPO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<!-- Loader - Aquí está la animación que se pide-->
+
+    <div class="loader" id="onload">
+
+        <div class="loadingio-spinner-pulse-egmzut9ed5l"><div class="ldio-1jo6o9gyqpk">
+        <div></div><div></div><div></div>
+        </div></div>
+
+    </div>
+
+<!-- Empieza el HEADER-->  
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="Imagenes/Logo.png" alt="Logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="index.html">Sobre nosotros</a>
+            <a href="Productos.html">Productos</a>
+            <a href="index.html">Contacto</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="user-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Buscar aquí...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+<!-- Termina el HEADER-->
+
+<!-- Empieza el Formulario-->
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!-- Usuario -->
+            <div class="formulario__group" id="group__user">
+                <label for="user" class="formulario__label">Usuario</label>
+                <div class="formulario__group-input">
+                    <input type="text" class="formulario__input" name="user" id="user" placeholder="Usuario">
+                    <i class="formulario__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 15 dígitos y solo puede contener números, letras y guión bajo.</p>
+            </div>
+
+            <!-- Nombre -->
+            <div class="formulario__group" id="group__name">
+                <label for="name" class="formulario__label">Nombre</label>
+                <div class="formulario__group-input">
+                    <input type="text" class="formulario__input" name="name" id="name" placeholder="Nombre">
+                    <i class="formulario__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre tiene que ser de 4 a 15 dígitos y solo puede contener números, letras y guión bajo.</p>
+            </div>
+
+            <!-- Password -->
+            <div class="formulario__group" id="group__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__group-input">
+                    <input type="password" class="formulario__input" name="password" id="password" placeholder="*******">
+                    <i class="formulario__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña tiene que contener de 4 a 12 dígitos.</p>
+            </div>
+
+            <!-- Password 2 -->
+            <div class="formulario__group" id="group__password2">
+                <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                <div class="formulario__group-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2" placeholder="*******">
+                    <i class="formulario__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="formulario__group" id="group__mail">
+                <label for="mail" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__group-input">
+                    <input type="email" class="formulario__input" name="mail" id="mail" placeholder="Correo Electrónico">
+                    <i class="formulario__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">.</p>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="formulario__group" id="group__phone">
+                <label for="phone" class="formulario__label">Teléfono</label>
+                <div class="formulario__group-input">
+                    <input type="text" class="formulario__input" name="phone" id="phone" placeholder="Número de teléfono">
+                    <i class="formulario__validation-status fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
+            </div>
+
+            <!-- Términos y condiciones -->
+            <div class="formulario__group" id="group__terms">
+                <label class="formulario__label">
+                    <input  class="formulario__checkbox" type="checkbox" name="terms" id="terms">
+                    Acepto los Términos y Condiciones
+                </label>
+            </div>
+
+            <div class="formulario__msg" id="formulario__msg">
+                <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellene el formulario correctamente.</p>
+            </div>
+
+            <div class="formulario__group formulario__group-btn">
+                <button type="submit" class="formulario__btn" id="formulario__btn">Registrarse</button>
+                <p class="formulario__msg-success" id="formulario__msg-success">Se ha registrado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+
+<!-- Termina el Formulario-->
+
+<!-- Empieza el Footer-->
+
+<section class="footer__form">
+
+    <div class="share">
+        <a href="https://www.facebook.com/Sabor-Caserito-112932127191095" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/saborcaserito_2.0/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/mateo-rodriguez-077a131b8/" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="index.html">Sobre nosotros</a>
+        <a href="Productos.html">Productos</a>
+        <a href="index.html">Contacto</a>
+    </div>
+
+    <div class="credit">Created by <span>Mateo Rodríguez</span> | ALL RIGHTS RESERVED</div>
+
+</section>
+
+
+<!-- Termina el Footer-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
